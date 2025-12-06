@@ -1,12 +1,54 @@
-# CodeAlpha - Basic Network Sniffer (Task 1)
+\# Secure Coding Review — CodeAlpha Task 3
 
-### Project Overview
-This project is part of the CodeAlpha Cybersecurity Internship.
-It uses Python and Scapy to capture network packets and display details such as:
-- Source IP
-- Destination IP
-- Protocol Type (TCP/UDP)
 
-### How to Run
-```bash
-python network_sniffer.py
+
+\## Vulnerabilities Found
+
+\### 1. SQL Injection
+
+\- Issue: Query is built using string formatting.
+
+\- Impact: Attacker can manipulate query and bypass login.
+
+\- Fix: Use parameterized queries.
+
+
+
+\### 2. Hardcoded Credentials
+
+\- Issue: Sensitive values exposed.
+
+
+
+\### 3. Missing Input Validation
+
+\- Issue: No sanitization of input values.
+
+
+
+---
+
+
+
+\## Improvements Made in secure\_code.py
+
+✔ Parameterized queries  
+
+✔ Removed hardcoding  
+
+✔ Added secure handling  
+
+
+
+---
+
+
+
+\## Tools Used
+
+\- Python
+
+\- SQLite
+
+
+
